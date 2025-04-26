@@ -223,13 +223,15 @@
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
+    <h2>Submit Your Audio/Video Files</h2>
     <div class="contact-form">
-      <form action="#" method="POST">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <input type="text" name="client_name" placeholder="Your Name" required>
+        <input type="email" name="client_email" placeholder="Your Email" required>
+        <textarea name="special_instructions" rows="5" placeholder="Special Instructions (if any)" required></textarea>
+        <label for="audio_video_file">Upload Your Audio/Video File:</label>
+        <input type="file" name="audio_video_file" id="audio_video_file" accept="audio/*,video/*" required>
+        <button type="submit">Submit Files</button>
       </form>
     </div>
   </section>
