@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SwiftScribe Transcription Services</title>
   <style>
     body {
@@ -101,7 +100,6 @@
     }
   </style>
 </head>
-
 <body>
 
 <header>
@@ -130,7 +128,18 @@
 
 <section id="upload">
   <div class="card">
-    <h2>Submit Your Files</h2>
+    <h2>Submit Your Files & Payment</h2>
+
+    <p><strong>Follow these steps to complete your order:</strong></p>
+    <ol>
+      <li>Check your total cost based on audio length and services.</li>
+      <li>Send payment via <strong>PayPal</strong> to: 
+        <span style="color: #007bff;"><strong>sylvialgk1@gmail.com</strong></span>
+      </li>
+      <li>Copy the PayPal Transaction ID after completing payment.</li>
+      <li>Fill out the form below and submit your files along with the Transaction ID.</li>
+    </ol>
+
     <form action="https://swiftscribe.epizy.com/upload.php" method="POST" enctype="multipart/form-data">
       <label for="client_name">Your Name:</label>
       <input type="text" id="client_name" name="client_name" required>
@@ -144,19 +153,6 @@
       <label for="audio_video_file">Upload Audio/Video File:</label>
       <input type="file" id="audio_video_file" name="audio_video_file" accept="audio/*,video/*" required>
 
-      <a href="#payment" class="btn">Proceed to Payment</a>
-    </form>
-  </div>
-</section>
-
-<section id="payment">
-  <div class="card">
-    <h2>Payment Details</h2>
-    <p>Please pay the required amount via <strong>PayPal</strong> to:</p>
-    <p style="font-size: 20px; color: #007bff;"><strong>sylvialgk1@gmail.com</strong></p>
-    <p>After payment, enter your PayPal Transaction ID below and submit your files.</p>
-
-    <form action="https://swiftscribe.epizy.com/upload.php" method="POST" enctype="multipart/form-data">
       <label for="transaction_id">PayPal Transaction ID:</label>
       <input type="text" id="transaction_id" name="transaction_id" required>
 
@@ -170,5 +166,4 @@
 </footer>
 
 </body>
-
 </html>
